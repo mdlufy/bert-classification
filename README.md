@@ -4,8 +4,8 @@
 - [Live Demo](https://mdlufy.github.io/bert-classification/)
 
 ## Training artifacts:
+- Model compiled in ONNX runtime format - [web_model](./web_model/)
+
 - Google Colab [transformers.ipynb](https://colab.research.google.com/drive/1NVspj6VFo81tjoCgIWWtR-St2UhOW3TQ?usp=sharing)
 
 - Local file [transformers.ipynb](./transformers.ipynb)
-
-- Model compiled in ONNR runtime format - [web_model](./web_model/)
