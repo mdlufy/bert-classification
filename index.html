@@ -266,7 +266,7 @@
                 try {
                     console.log('Initializing models...');
                     transformers.env.allowLocalModels = true;
-                    transformers.env.localModelPath = '/models/';
+                    transformers.env.localModelPath = './models/';
                     ort.env.wasm.numThreads = 1;
 
                     updateStatus('Loading tokenizer...');
@@ -278,21 +278,21 @@
 
                     updateStatus('Loading BERT model...');
                     bertSession = await ort.InferenceSession.create(
-                        '/models/bert/onnx/model_quantized.onnx',
+                        './models/bert/onnx/model_quantized.onnx',
                         { executionProviders: ['wasm'] }
                     );
                     console.log('Bert model loaded:', bertSession);
 
                     updateStatus('Loading classifier...');
                     perceptronSession = await ort.InferenceSession.create(
-                        '/models/perceptron/model_quantized.onnx',
+                        './models/perceptron/model_quantized.onnx',
                         { executionProviders: ['wasm'] }
                     );
                     console.log('Perceptron model loaded:', perceptronSession);
 
                     updateStatus('Loading parameters...');
                     const response = await fetch(
-                        '/models/perceptron/scaler_params.json'
+                        './models/perceptron/scaler_params.json'
                     );
                     scalerParams = await response.json();
                     console.log('Scaler parameters loaded:', scalerParams);
