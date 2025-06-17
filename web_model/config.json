@@ -1,6 +1,0 @@
-{
-    "model_type": "onnx",
-    "task": "text-classification",
-    "quantized": false,
-    "framework": "onnxruntime-web"
-}

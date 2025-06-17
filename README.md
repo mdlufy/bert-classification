@@ -1,11 +1,11 @@
 ## Classification model
-- Simple texts classification based on model [distilbert/distilbert-base-uncased-finetuned-sst-2-english](https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english)
+- Simple texts classification based on model [distilbert-base-uncased](https://huggingface.co/distilbert/distilbert-base-uncased)
 
 - [Live Demo](https://mdlufy.github.io/bert-classification/)
 
 ## Training artifacts:
-- Model compiled in ONNX runtime format - [web_model](./web_model/)
+- Models - [models](./models/)
 
-- Google Colab [transformers.ipynb](https://colab.research.google.com/drive/1NVspj6VFo81tjoCgIWWtR-St2UhOW3TQ?usp=sharing)
+- Google Colab [classification.ipynb](https://colab.research.google.com/drive/1e8Cb-PXPhIAk9RpKIzrryQiLkwD9wWGR?usp=sharing)
 
-- Local file [transformers.ipynb](./transformers.ipynb)
+- Local Jupyter File [classification.ipynb](./classification.ipynb)
